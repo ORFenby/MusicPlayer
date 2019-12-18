@@ -40,13 +40,14 @@
             this.NextBTN = new System.Windows.Forms.Button();
             this.ShuffleBTN = new System.Windows.Forms.Button();
             this.IdleTimer = new System.Windows.Forms.Timer(this.components);
-            this.MP3MediaPLayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel3 = new System.Windows.Forms.Panel();
             this.MusicList = new System.Windows.Forms.ListBox();
             this.SearchBox = new System.Windows.Forms.TextBox();
             this.SearchBTN = new System.Windows.Forms.Button();
             this.CrtPlayListBTN = new System.Windows.Forms.Button();
+            this.UpgradeBTN = new System.Windows.Forms.Button();
+            this.MP3MediaPLayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MP3MediaPLayer)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +55,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(145)))), ((int)(((byte)(191)))));
+            this.panel1.Controls.Add(this.UpgradeBTN);
             this.panel1.Controls.Add(this.MinimizeBTN);
             this.panel1.Controls.Add(this.CloseBTN);
             this.panel1.Controls.Add(this.label1);
@@ -160,15 +162,6 @@
             this.IdleTimer.Interval = 1000;
             this.IdleTimer.Tick += new System.EventHandler(this.IdleTimer_Tick);
             // 
-            // MP3MediaPLayer
-            // 
-            this.MP3MediaPLayer.Enabled = true;
-            this.MP3MediaPLayer.Location = new System.Drawing.Point(13, 81);
-            this.MP3MediaPLayer.Name = "MP3MediaPLayer";
-            this.MP3MediaPLayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MP3MediaPLayer.OcxState")));
-            this.MP3MediaPLayer.Size = new System.Drawing.Size(221, 318);
-            this.MP3MediaPLayer.TabIndex = 7;
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog";
@@ -218,6 +211,27 @@
             this.CrtPlayListBTN.Text = "Create Playlist";
             this.CrtPlayListBTN.UseVisualStyleBackColor = true;
             this.CrtPlayListBTN.Click += new System.EventHandler(this.CrtPlayListBTN_Click);
+            // 
+            // UpgradeBTN
+            // 
+            this.UpgradeBTN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.UpgradeBTN.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.UpgradeBTN.Location = new System.Drawing.Point(159, 0);
+            this.UpgradeBTN.Name = "UpgradeBTN";
+            this.UpgradeBTN.Size = new System.Drawing.Size(63, 58);
+            this.UpgradeBTN.TabIndex = 14;
+            this.UpgradeBTN.Text = "Upgrade";
+            this.UpgradeBTN.UseVisualStyleBackColor = true;
+            this.UpgradeBTN.Click += new System.EventHandler(this.UpgradeBTN_Click);
+            // 
+            // MP3MediaPLayer
+            // 
+            this.MP3MediaPLayer.Enabled = true;
+            this.MP3MediaPLayer.Location = new System.Drawing.Point(13, 81);
+            this.MP3MediaPLayer.Name = "MP3MediaPLayer";
+            this.MP3MediaPLayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MP3MediaPLayer.OcxState")));
+            this.MP3MediaPLayer.Size = new System.Drawing.Size(221, 318);
+            this.MP3MediaPLayer.TabIndex = 7;
             // 
             // MusicPlayer
             // 
@@ -269,6 +283,7 @@
         private System.Windows.Forms.TextBox SearchBox;
         private System.Windows.Forms.Button SearchBTN;
         private System.Windows.Forms.Button CrtPlayListBTN;
+        private System.Windows.Forms.Button UpgradeBTN;
     }
 }
 

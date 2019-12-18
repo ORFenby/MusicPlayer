@@ -167,5 +167,10 @@ namespace MusicPlayer
         {
 
         }
+
+        private void UpgradeBTN_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show("Application already upto date");
+        }
     }
 }
